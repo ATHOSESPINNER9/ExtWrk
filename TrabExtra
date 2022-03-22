@@ -1,0 +1,21 @@
+usuario = []
+serie = []
+
+print("Digite o nome de 20 usuarios")
+for i in range(20):
+    print("Nome", i)
+    usuario.append(input())
+    print("\n")
+
+print("Este usuário prefere Batman ou Superman?\n\t1.Batman\t2.Superman")
+for i in range(20):
+    print(usuario[i], "prefere.: ")
+    serie.append(int(input()))
+    print("\n")
+    if serie == 1:
+        serie.append("Batman")
+    else:
+        serie.append("Superman")
+
+for i in range(20):
+    print(usuario[i], "prefere assistir", serie[i])
